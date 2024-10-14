@@ -64,7 +64,7 @@ app.command('/mark-finished', async ({ command, ack, respond }) => {
   const helperId = command.user_id;
 
   //
-  const reviewChannel = 'CXXXXXXXX'; 
+  const reviewChannel = 'C07RD7F7NTY'; 
   await app.client.chat.postMessage({
     channel: reviewChannel,
     text: `Task Review Required:\n*Helper:* <@${helperId}>\nReact with ✅ to approve or ❌ to reject.`
